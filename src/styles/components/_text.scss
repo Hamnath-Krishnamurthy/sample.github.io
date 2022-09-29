@@ -1,0 +1,182 @@
+.txt-xl {
+  font-size: 18px;
+  line-height: 28px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.txt-lg {
+  font-size: 16px;
+  line-height: 26px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.txt-md {
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: 768px) {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.txt-sm {
+  font-size: 12px;
+  line-height: 22px;
+
+  @media (min-width: 768px) {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.txt-xs {
+  font-size: 11px;
+  line-height: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+.txt-xxs {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+// fonts
+
+.fnt-family-barlow {
+  font-family: "Barlow", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.fnt-barlow-500 {
+  @extend .fnt-family-barlow;
+  font-weight: 500;
+}
+
+.fnt-barlow-500 {
+  font-weight: 500;
+}
+
+.fnt-barlow-600 {
+  font-weight: 600;
+}
+
+.fnt-barlow-700 {
+  font-weight: 700;
+}
+
+.fnt-barlowsemiLight {
+  @extend .fnt-family-barlow;
+  font-weight: 500;
+}
+
+.fnt-barlowsemi {
+  @extend .fnt-family-barlow;
+  font-weight: 600;
+}
+
+.fnt-barlowbold {
+  @extend .fnt-family-barlow;
+  font-weight: 700;
+}
+
+// .bg-color-primary6 {
+//   color: $bg-color-primary6;
+// }
+
+/** Montserrat **/
+
+.fnt-monts-300 {
+  // font-family: $fnt-montesrt;
+  font-weight: 300;
+}
+
+.fnt-Monts-500 {
+  font-family: $fnt-montesrt;
+  font-weight: 500;
+}
+
+.fnt-Monts-600 {
+  font-family: $fnt-montesrt;
+  font-weight: 600;
+}
+
+.fnt-Monts-700 {
+  font-family: $fnt-montesrt;
+  font-weight: 700;
+}
+
+.fnt-Monts-700,
+b {
+  font-weight: 700 !important;
+}
+
+// Colors and Background
+
+.txt-clr-pri {
+  color: $primary-color;
+}
+
+.txt-clr-blue {
+  color: $deep-blue;
+}
+
+.txt-clr-anchor {
+  color: $anchor-color;
+}
+
+.txt-clr-pri94 {
+  color: rgba($primary-color, 0.94);
+}
+
+.txt-clr-sec {
+  color: $text-color-sec;
+}
+
+.txt-white {
+  color: $white;
+}
+
+.txt-black {
+  color: $black;
+}
+
+.txt-black8 {
+  color: rgba($black, 0.8);
+}
+
+.txt-nav-link {
+  color: $text-color-nav;
+}
+
+.bg-primary {
+  background-color: $bg-color-primary;
+}
+
+.bg-lightBlue {
+  background-color: #eaf7e9;
+}

@@ -1,0 +1,142 @@
+@import '../../styles/function.scss';
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+
+// font-weights
+.fnt-300 {
+  font-weight: 300 !important;
+}
+.fnt-400 {
+  font-weight: $font-normal !important;
+}
+
+.fnt-600 {
+  font-weight: $font-semibold !important;
+}
+
+.fnt-500 {
+  font-weight: $font-medium !important;
+}
+
+.fnt-700 {
+  font-weight: $font-bold !important;
+}
+
+.fnt-800 {
+  font-weight: $font-extrabold !important;
+}
+
+// font-size
+
+.fnt-48 {
+  font-size: rem(24px);
+  line-height: rem(32px);
+
+  @media (min-width: 768px) {
+    font-size: rem(34px);
+    line-height: rem(46px);
+  }
+
+  @media (min-width: 992px) {
+    font-size: rem(48px);
+    line-height: rem(56px);
+  }
+}
+
+.fnt-24 {
+  font-size: rem(16px);
+  line-height: rem(24px);
+
+  @media (min-width: 768px) {
+    font-size: rem(22px);
+    line-height: rem(30px);
+  }
+
+  @media (min-width: 992px) {
+    font-size: rem(24px);
+    line-height: rem(32px);
+  }
+}
+.fnt-24-24 {
+  font-size: rem(24px);
+  line-height: rem(32px);
+}
+.fnt-20 {
+  font-size: rem(16px);
+  line-height: rem(24px);
+
+  @media (min-width: 768px) {
+    font-size: rem(18px);
+    line-height: rem(26px);
+  }
+
+  @media (min-width: 992px) {
+    font-size: rem(20px);
+    line-height: rem(18px);
+  }
+}
+
+.fnt-22 {
+  font-size: rem(18px);
+  line-height: rem(26px);
+
+  @media (min-width: 768px) {
+    font-size: rem(20px);
+    line-height: rem(28px);
+  }
+
+  @media (min-width: 992px) {
+    font-size: rem(22px);
+    line-height: rem(20px);
+  }
+}
+
+.fnt-16 {
+  font-size: rem(16px);
+  line-height: rem(26px);
+}
+
+.fnt-12 {
+  font-size: rem(12px);
+  line-height: rem(43px);
+  @media (max-width: 768px) {
+    line-height: rem(24px);
+  }
+}
+
+.fnt-14 {
+  font-size: rem(14px) !important;
+  line-height: rem(25px) !important;
+}
+
+.fnt-32 {
+  font-size: rem(32px) !important;
+  @media (max-width: 768px) {
+    font-size: rem(24px) !important;
+  }
+}
+
+.fnt-20-fixed{
+  font-size: rem(20px);
+  line-height: rem(24px);
+} 
+.fnt-24-fixed{
+  font-size: rem(24px);
+  line-height: rem(32px);
+} 
+
+.fnt-sm-20{
+  @media(max-width : 767px){
+    font-size: rem(20px) !important;
+  line-height: rem(24px) !important;
+  }
+}
+.fnt-sm-32{
+  @media(max-width : 767px){
+    font-size: rem(32px) !important;
+  line-height: rem(32px) !important;
+  }
+}

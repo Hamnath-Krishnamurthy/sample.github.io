@@ -1,0 +1,494 @@
+@import "../../styles/components/variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400 !important;
+  color: $gray-400 !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+  overflow-x: hidden !important;
+  font-family: "Red Hat Display", sans-serif !important;
+}
+
+// .tata-steel-ashiyana {
+//   overflow-x: hidden;
+// }
+
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 98%;
+  }
+
+  @media (min-width: 992px) {
+    width: 95%;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+// .tata-page-wrapper {
+//   padding-top: 11rem;
+
+//   &.ts-help-and-support-page {
+//     padding-top: 4rem;
+
+//     @media (min-width: 768px) {
+//       padding-top: 6rem;
+//     }
+//   }
+
+//   &.ts-rebar-page {
+//     padding-top: 9rem;
+//   }
+
+//   &.ts-client-stories-page {
+//     padding-top: 4rem;
+
+//     @media (min-width: 1024px) {
+//       padding-top: 5rem;
+//     }
+
+//     // CLIENT STORIES - Section Heading
+//     .tsa-hint-patch {
+//       .tata-card.tata-card-secondary.p-0.cardtext {
+//         height: auto;
+//       }
+//     }
+//   }
+// }
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.w-md-50 {
+  @media (min-width: 992px) {
+    width: 50% !important;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.user-select-none {
+  user-select: none;
+}
+
+// Links
+
+// .tata-anchorlink {
+//   font-size     : 16px;
+//   line-height   : 26px;
+//   color         : $anchor-color;
+//   letter-spacing: .53px;
+//   font-weight   : 600;
+//   font-family   : $fnt-barlow;
+//   transform     : $transitionall;
+
+//   @media(min-width:768px) {
+//     letter-spacing: 1.53px;
+//     font-size     : 20px;
+//     line-height   : 30px;
+//   }
+
+//   &--sm {
+//     font-size  : 14px;
+//     line-height: 22px;
+
+//     @media(min-width:768px) {
+//       font-size  : 16px;
+//       line-height: 24px;
+//     }
+//   }
+
+//   &--white {
+//     color: $white;
+
+//     &:hover {
+//       color    : $yellow;
+//       transform: $transitionall;
+//     }
+//   }
+// }
+
+// Flex
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// screen orientation
+
+// overlay  landscape view code
+
+.modall {
+  display: none;
+
+  @media (min-width: 414px) and (max-width: 767px) and (orientation: landscape) {
+    /* some styles to position the modal at the center of the page */
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    z-index: 10;
+    height: 100vh;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    @media (min-width: 414px) and (max-width: 767px) and (orientation: landscape) {
+      width: 200px;
+      height: 150px;
+      margin-bottom: 2%;
+    }
+  }
+}
+
+html {
+  @media (min-width: 414px) and (max-width: 767px) and (orientation: landscape) {
+    overflow: hidden;
+  }
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0px !important;
+}
+
+.w-md-block {
+  @media (max-width: 600px) {
+    display: block;
+    width: 100%;
+  }
+  @media (min-width: 992px) {
+    display: block;
+    width: 100%;
+    padding: 9px 80px !important;
+  }
+}
+
+.w-block {
+  @media (min-width: 768px) {
+    padding: 18px 80px !important;
+  }
+
+  @media (max-width: 1280px) {
+    padding: 13px 80px !important;
+  }
+}
+
+.filledColor {
+  color: #ffa100;
+  font-weight: 900;
+}
+
+.w-max-100 {
+  @media (max-width: 645px) {
+    min-width: 100%;
+    width: 100%;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// Sample
+
+.otp-input-container {
+  > div {
+    // flex: 1;
+    margin: 0 1rem;
+    color: green !important;
+  }
+}
+
+.otp-modal .ant-modal-body {
+  padding: 2rem 1rem;
+
+  @media (min-width: 768px) {
+    padding: 3rem;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.tsa-brand-logo._login {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.tsa-brand-logo {
+  border: none;
+
+  &__img {
+    @media (max-width: 767px) {
+      position: fixed;
+      background: white;
+      z-index: 11;
+      border-bottom: none !important;
+      width: 100%;
+      top: 0;
+      padding: 12px 0 0 0;
+    }
+
+    @media (min-width: 768px) {
+      position: absolute;
+      height: auto;
+      z-index: 11;
+      top: 10px;
+    }
+  }
+}
+
+.tsa-map {
+  height: calc(100vh - 12vh);
+}
+
+// tsa-expert
+
+// .tsa-expert {
+//   border-radius : 2px;
+//   color         : $anchor-color;
+//   font-family   : $fnt-montesrt;
+//   font-weight   : $fnt-reg;
+//   letter-spacing: 0.5px;
+//   font-size     : 14px;
+//   line-height   : 24px;
+//   padding       : 20px 40px;
+//   border        : 2px solid $anchor-color;
+//   padding       : 14px 50px;
+//   margin        : 0 auto;
+//   text-align    : center;
+
+//   @media(min-width: 768px) {
+//     padding: 20px 40px;
+//     border : 2px solid $anchor-color;
+//   }
+
+//   strong {
+//     font-weight: $fnt-bold;
+//   }
+// }
+
+// Custom Scroll
+.tsa-nearest-dealers-lists,
+.tata-loginpanel .ant-card-body {
+  height: 100%;
+
+  @media (min-width: 768px) {
+    overflow-y: auto;
+    height: calc(100vh - 12vh);
+  }
+
+  // Login Flow Scroll
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: 5px solid rgba(0, 0, 0, 0.44);
+  }
+}
+
+// Load MOre
+.tsa-load-more {
+  .anticon-reload {
+    transform: rotateY(180deg);
+  }
+}
+
+//
+
+.mt-60 {
+  @media (min-width: 1366px) {
+    margin-top: -60px;
+  }
+}
+
+.h300 {
+  height: 200px !important;
+  width: 100% !important;
+
+  @media (min-width: 1366px) {
+    height: 300px !important;
+  }
+}
+
+.icon-block {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #f3f5f7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+
+  &--lg {
+    width: 48px;
+    height: 48px;
+    border: 2px solid #ffffff;
+  }
+}
+
+.top-1 {
+  top: 1rem;
+}
+.start-1 {
+  left: 0.5rem;
+  @media (min-width: 768px) {
+    left: 1.8rem;
+  }
+}
+
+.start-0-5 {
+  left: 0.8rem;
+}
+
+.bottom-1 {
+  bottom: 0;
+  @media (min-width: 768px) {
+    bottom: 1.5rem;
+  }
+  @media (min-width: 992px) {
+    bottom: 0rem;
+  }
+}
+
+.footer-sec a {
+  text-decoration: none !important;
+}
+// .a-txt-dec {
+//   text-decoration: underline;
+//   text-underline-offset: 3px;
+// }
+@media (max-width: 600px) {
+  .fnt-14-14 {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+}
+.text-under-of {
+  text-underline-offset: 6px;
+}
+.z-index{
+  z-index: 999;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.opacity-1{
+  opacity: 1 !important;
+} 
+
+.list-group-disc{
+  list-style-type: disc !important;
+}
+
+.hr{
+height: 2px;
+background: #F4F4F4;
+}
+
+.start-5{
+  left : -4.5rem !important;
+}
+
+.top-25{
+  top: 25% !important;
+}
+
+.top-135{
+  top: 133rem;
+}
+
+.bottom-55rem{
+  bottom: 53.5rem;
+}
+
+.right-35{
+  right: -35px;
+}
+
+.box-shadow{
+  box-shadow: 0px 14px 24px rgba(146, 154, 220, 0.28);
+}
+
+.z-index-0{
+  z-index: 0 !important;
+}
+
+.center{
+
+  text-align: start;
+  padding: 0;
+  @media(min-width : 425px){
+    text-align: center;
+  }
+}
+
+.start{
+  text-align: center;
+  padding: 0;
+  @media(min-width : 425px){
+    text-align: start;
+  }
+
+}
+
+.rotate-180{
+  transform: rotate(180deg);
+}
+
+.swiper-pagination{
+  display: flex !important;
+}

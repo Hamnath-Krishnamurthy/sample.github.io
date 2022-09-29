@@ -1,0 +1,18 @@
+.breadcrumb-item + .breadcrumb-item::before{
+    content: '›' !important;
+}
+
+ol{
+    li{
+        a,span{
+            color: #2D3577;
+        }
+    }
+}
+.ol-bread{
+    li{
+        a,span{
+            text-decoration: none;
+        }
+    }
+}

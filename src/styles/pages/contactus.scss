@@ -1,0 +1,111 @@
+.contact_us {
+  .banner {
+    height: 9.5rem;
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+      height: 15rem;
+    }
+
+    @media (min-width: 992px) {
+      height: 19.6875rem;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 86%;
+      @media (min-width: 768px) {
+        width: 60%;
+      }
+      @media (min-width: 992px) {
+        width: 70%;
+      }
+      @media (min-width: 1200px) {
+        width: 55%;
+      }
+    }
+
+    img {
+      position: absolute;
+
+      &:nth-of-type(1) {
+        top: 4.5rem;
+        right: -2rem;
+        width: 112px;
+        height: 110px;
+        @media (min-width: 768px) {
+          top: 3rem;
+          right: 1.25rem;
+          width: 160px;
+          height: 155px;
+        }
+      }
+      &:nth-of-type(2) {
+        top: -0.5rem;
+        left: -1rem;
+        width: 65px;
+        height: 65px;
+        @media (min-width: 768px) {
+          top: 3rem;
+          left: -5rem;
+          width: 250px;
+          height: 250px;
+          transform: rotate(180deg);
+        }
+        @media (min-width: 962px) {
+          top: 3rem;
+          left: -5rem;
+          width: 360px;
+          height: 360px;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .form {
+    border: 2px solid #f2f2f2;
+    border-radius: 9.03817px;
+    form {
+      display: flex;
+      justify-content: center;
+
+      label {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        color: #1f2d3d !important;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select {
+        height: 64px;
+        width: 100%;
+        color: #1f2d3d !important;
+      }
+      .select {
+        background-image: url("../../assets/icons/arrow_back_ios_new.svg") !important;
+        background-position: right 2rem center !important;
+      }
+      textarea {
+        height: 135px;
+        resize: none;
+      }
+
+      .condition {
+        @media (min-width: 768px) {
+          display: contents;
+        }
+        .form-check {
+          .form-check-label {
+            color: #a4a4a4 !important;
+          }
+          a {
+            color: rgba(45, 53, 119, 1);
+          }
+        }
+      }
+    }
+  }
+}

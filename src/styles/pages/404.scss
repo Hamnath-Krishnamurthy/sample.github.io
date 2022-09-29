@@ -1,0 +1,110 @@
+.Error404 {
+    img {
+        @media (max-width: 767px) {
+            width: rem(220px);
+            height: rem(167px);
+        }
+    }
+
+    .newsLetter{
+        @media(max-width:767px){
+            font-size: rem(20px) !important;
+            line-height: rem(24px) !important;
+        }
+    }
+    .subscribe {
+        margin: auto;
+
+        @media (min-width: 992px) {
+            width: 796px;
+            border: 2px solid #f2f2f2;
+            border-radius: 9.03817px;
+            padding: 32px 72px;
+        }
+
+        &__form {
+            .form-content {
+                position: relative;
+                input {
+                    // width: 632px;
+                    height: rem(64px);
+                    background: #ffffff;
+                    border: 0.564885px solid rgba(0, 0, 0, 0.5);
+                    border-radius: 9.03817px;
+                    font-weight: 400;
+                    font-size: rem(16px);
+                    line-height: rem(26px);
+                    position: relative;
+                    @media(max-width : 767px){
+                        height: rem(54px);
+                    }
+                }
+                input[required] + label {
+                    position: absolute;
+                    left: rem(24px);
+                    bottom: rem(18px);
+                    @media(max-width : 767px){
+                        left: rem(10px);
+                        bottom: rem(14px);
+                    }
+                    /* the negative of the input width */
+                }
+
+                /* show the placeholder when input has no content (no content = invalid) */
+
+                input[required]:invalid + label {
+                    display: inline-block;
+                }
+
+                /* hide the placeholder when input has some text typed in */
+
+                input[required]:valid + label {
+                    display: none;
+                }
+
+                label {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #1f2d3d;
+                    span {
+                        color: rgba(255, 0, 0, 1);
+                    }
+                }
+                button {
+                    width: rem(170px) !important;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    box-shadow: none !important;
+                    margin: 5px 8px;
+                    @media(max-width : 767px){
+                        width: rem(110px) !important;
+                        height: rem(45px);
+                    }
+                }
+            }
+        }
+
+        p {
+            &:last-child {
+                a {
+                    color: #2d3577 !important;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.subscriberModal {
+    box-shadow: 0px 11px 70px rgba(0, 0, 0, 0.13) !important;
+    border-radius: 8px !important;
+    border: 1px solid #fff;
+    .modal-header {
+        border: none;
+        .btn-close {
+            background: transparent url(../../assets/icons/x.svg) center/1em auto no-repeat !important;
+            opacity: 1;
+        }
+    }
+}

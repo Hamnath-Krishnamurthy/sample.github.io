@@ -1,0 +1,64 @@
+// Home Clients brand banner
+
+// .bg-white {
+//   background-color: $white;
+// }
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+// .bg-secondary {
+//   background-color: $bg-color-secondary;
+// }
+
+// .bg-thrice {
+//   background-color: rgba($color: $anchor-color, $alpha: 0.05);
+// }
+
+// .bg-f2f4 {
+//   background-color: #f2f4f6;
+// }
+
+// .bg-fof8 {
+//   background: #f0f8fa;
+// }
+
+// .bg-f5f5 {
+//   background: #f5f5f6;
+// }
+
+// .bg-e3ed {
+//   background: #e3edf1;
+// }
+
+// .bg-orange {
+//   background: rgba(255, 161, 0, 0.24);
+// }
+.bg-gradient-primary {
+  background: $bg-gradient-primary !important;
+  // background-size: 100% 45% !important;
+  // background-repeat: no-repeat !important;
+
+  @media (max-width: 425px) {
+    background: $bg-mobile-gradient-primary !important;
+  }
+}
+
+.bg-gradient-secondary {
+  background: $bg-gradient-secondary !important;
+}
+
+.bg-sky-200 {
+  background-color: #f2f3ff;
+}
+
+.bg-f2f3ff {
+  background-color: #f2f3ff;
+}
+.bg-white-white {
+  background-color: #ffff;
+}
+.bg-00000 {
+  background-color: #000000;
+}

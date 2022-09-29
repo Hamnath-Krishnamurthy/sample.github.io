@@ -1,0 +1,38 @@
+.choose-option-lists {
+    display    : flex;
+    align-items: center;
+
+    @media(max-width:992px) {
+        flex-direction: column;
+        align-items   : flex-start;
+    }
+
+    .choose-option {
+        @media(min-width:768px) {
+            margin: 0 16px 16px 0;
+        }
+
+        @media(min-width:992px) {
+            margin: 0 16px 0 0;
+        }
+    }
+}
+
+// .tsa-desc {
+//     color: $primary-color;
+//     @extend .txt-md;
+//     font-weight: 400;
+//     // font-family: $fnt-montesrt;
+// }
+
+.border-trans {
+    border: 1px solid transparent !important;
+}
+
+.border {
+    border: 1px solid #E4E7Fd !important;
+}
+
+.pointer{
+    cursor: pointer;
+}

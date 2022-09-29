@@ -1,0 +1,64 @@
+.pd-lft {
+  padding-left: 24px;
+}
+.lit-sty {
+  font-size: 16px;
+  font-weight: 400;
+  color: #414042;
+  line-height: 32px;
+  margin-left: 0.8rem;
+}
+.li-hd {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d3577;
+  line-height: 24px;
+}
+.bg-shd {
+  background-color: #f2f3ff;
+  padding: 27px 30px;
+  border-radius: 19px;
+}
+
+.email-brd-bx {
+  padding: 17px 17px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #e4e7fd;
+}
+.sub-btn {
+  border: 1px solid #e4e7fd;
+  border-radius: 8px;
+  padding: 14px;
+  height: 3.5rem;
+  @media (min-width: 992px) {
+    width: 125px;
+  }
+}
+.pect-clr {
+  color: #414042;
+}
+.accordion-button:focus {
+  outline: none !important;
+  border-color: #ffff !important;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+}
+.accordion-button {
+  padding: 12px 0px !important;
+}
+.accordion-button::after {
+  background-image: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+
+footer {
+  margin-top: 32px;
+  @media (min-width: 768px) {
+    margin-top: 66px;
+  }
+}

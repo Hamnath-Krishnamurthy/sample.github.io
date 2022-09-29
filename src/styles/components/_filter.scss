@@ -1,0 +1,135 @@
+// .checkbox-filter-form {
+//     @media (max-width:991.9px) {
+//         position  : fixed;
+//         bottom    : 0;
+//         transform : translateX(100%);
+//         opacity   : 0;
+//         visibility: hidden;
+//     }
+
+//     &.active {
+//         @media (max-width:991.9px) {
+//             bottom    : 0;
+//             transform : translateX(0%);
+//             opacity   : 1;
+//             visibility: visible;
+//         }
+//     }
+// }
+
+.tag-panel {
+    @media (max-width:767.9px) {
+        overflow: auto;
+    }
+
+    .ant-radio-group {
+        display    : flex;
+        overflow   : auto;
+        white-space: nowrap;
+    }
+
+    .ant-radio-button-wrapper {
+        opacity       : 0.8;
+        color         : #002b45;
+        font-family   : $fnt-barlow;
+        font-size     : 16px;
+        font-weight   : 500;
+        font-style    : normal;
+        letter-spacing: 0.23px;
+        line-height   : 26px;
+        text-align    : left;
+        border-radius : 2px;
+        border        : 1px solid rgba(0, 43, 69, 0.15) !important;
+        display       : inline-block;
+        padding       : .2rem 1rem;
+        height        : auto;
+
+        @media (min-width:768px) {
+            padding    : .3rem 1.4rem;
+            font-size  : 18px;
+            line-height: 28px;
+        }
+
+        &::before {
+            background-color: transparent !important;
+        }
+    }
+
+    .ant-radio-button-wrapper-checked {
+        background-color: transparent !important;
+        color           : #3d7edb !important;
+        border          : 1px solid #3d7edb !important;
+        border-radius   : 2px;
+        outline         : none;
+        box-shadow      : none;
+        opacity         : 1;
+    }
+
+    &--secondary {
+        .ant-radio-button-wrapper {
+            color         : #002b45 !important;
+            font-family   : $fnt-montesrt;
+            font-size     : 14px;
+            font-weight   : 500;
+            font-style    : normal;
+            letter-spacing: normal;
+            line-height   : 27px;
+            text-align    : left;
+            border-radius : 5px;
+            border        : 1px solid #002b45 !important;
+        }
+
+        .ant-radio-button-wrapper-checked {
+            background-color: #002b45 !important;
+            color           : #fff !important;
+            border          : 1px solid #002b45 !important;
+            border-radius   : 5px;
+            outline         : none;
+            box-shadow      : none;
+        }
+    }
+}
+
+.blog-card-section {
+    margin-top: 40px;
+}
+
+.filter-heading {
+    color         : #002b45;
+    font-family   : $fnt-barlow;
+    font-size     : 24px;
+    font-weight   : 600;
+    font-style    : normal;
+    letter-spacing: 0.3px;
+    line-height   : 32px;
+    text-align    : left;
+}
+
+.filter-clear {
+    color         : #3d7edb;
+    font-family   : $fnt-barlow;
+    font-size     : 16px;
+    font-weight   : 600;
+    font-style    : normal;
+    letter-spacing: 1.23px;
+    line-height   : normal;
+    text-align    : right;
+    float         : right;
+}
+
+.filter-list {
+    padding: 24px 0px 40x 16px !important;
+    border : 1px solid rgba(0, 43, 69, 0.15);
+
+    .tsa-panel-header:last-child {
+        border-bottom: 1px solid transparent;
+    }
+}
+
+.mobile-filter-trigger {
+    cursor: pointer;
+
+    @media (min-width:992px) {
+        display: none;
+    }
+}

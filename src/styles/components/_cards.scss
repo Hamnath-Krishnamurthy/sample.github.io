@@ -1,0 +1,410 @@
+// // Cards
+
+// .tata-product-card {
+//     position      : relative;
+//     display       : flex;
+//     flex-direction: column;
+//     background    : $white;
+//     width         : 100%;
+//     height        : 100%;
+//     transition    : $transitionall;
+
+//     &:hover,
+//     &:focus,
+//     &:visited {
+//         box-shadow: 0 16px 20px rgba(0, 43, 69, 0.07);
+//         transition: $transitionall;
+//     }
+
+//     &__content {
+//         padding       : 0.625rem 1rem;
+//         display       : flex;
+//         flex-direction: column;
+//         height        : 100%;
+
+//         @media(min-width:768px) {
+//             padding: 1.2rem 1.2rem;
+//         }
+
+//         @media(min-width:992px) {
+//             padding: 1.2rem 1.4rem;
+//         }
+//     }
+
+//     &__img-w {
+//         display        : flex;
+//         justify-content: center;
+//         align-items    : center;
+//         min-height     : 260px;
+
+//         img {
+//             max-height: 260px;
+//         }
+//     }
+
+//     &__heading {
+//         @extend .txt-lg;
+//         font-weight: $fnt-bold;
+//         color      : $primary-color;
+//         flex       : 1 1 auto;
+//     }
+
+//     // Border card
+//     &--border {
+//         border       : 1px solid rgba(0, 43, 69, 0.15);
+//         border-radius: $border-radius2;
+//         height       : 100%;
+//     }
+
+//     &--border0 {
+//         border       : 1px solid transparent;
+//         border-radius: $border-radius2;
+//         height       : 100%;
+//     }
+
+//     &__des {
+//         font-weight: $fnt-semibold;
+//         color      : $primary-color;
+//     }
+
+//     .area {
+//         color      : $text-color-black8;
+//         font-family: $fnt-montesrt;
+//         font-size  : 14px;
+//         line-height: 24px;
+//         font-weight: $fnt-medium;
+//     }
+
+//     .budget {
+//         color      : $green;
+//         font-family: $fnt-montesrt;
+//         font-size  : 14px;
+//         font-weight: $fnt-bold;
+//         line-height: 24px;
+//     }
+// }
+
+// .offer {
+//     position: relative;
+
+//     .tata-product-card__img-w {
+//         text-align: center;
+
+//         margin: {
+//             top      : 2rem;
+//             // bottom: .5rem;
+//         }
+//     }
+// }
+
+// .tata-product-card.offer.product {
+//     height: 100%;
+// }
+
+// .tata-product-discount {
+//     position     : absolute;
+//     right        : 0;
+//     top          : 0;
+//     display      : inline-flex;
+//     align-items  : center;
+//     font-size    : 10px;
+//     line-height  : 22px;
+//     background   : $yellow;
+//     color        : $white;
+//     border-radius: $border-radius2;
+//     font-weight  : $fnt-medium;
+
+//     padding : {
+//         left : .4rem;
+//         right: .4rem;
+//     }
+
+//     span {
+//         @extend .txt-xs;
+//         display     : inline-block;
+//         font-weight : $fnt-bold;
+//         margin-right: .2rem;
+//     }
+// }
+
+// .tata-product-wrapper {
+//     // flex       : 0.5 1 auto;
+//     display        : flex;
+//     align-items    : baseline;
+//     position       : relative;
+//     justify-content: space-between;
+
+//     @media (min-width: 768px) {
+//         // flex: 1 1 auto;
+//     }
+// }
+
+// .tata-product-dealcontainer {
+//     display        : flex;
+//     justify-content: space-between;
+//     align-items    : center;
+// }
+
+// .tata-price {
+//     @extend .txt-sm;
+//     letter-spacing: 0.5px;
+//     color         : $price-txt;
+//     margin-right  : .5rem;
+// }
+
+// .tata-text-price {
+//     color          : $primary-color;
+//     text-decoration: line-through;
+// }
+
+// // Brand box
+
+// .tata-product-brand {
+//     width     : 82px;
+//     min-height: 42px;
+//     border    : 1px solid rgba($color: #002744, $alpha: .1);
+// }
+
+// .-posi-rght {
+//     right   : 1rem;
+//     position: absolute;
+//     top     : 1rem;
+
+//     &--right-0 {
+//         right : 0;
+//         height: auto;
+//     }
+// }
+
+// //**** please target the parent *****///
+
+// // Material estimator
+
+// .tata-card {
+//     background: $white;
+//     padding   : 1.2rem 1.2rem;
+//     width     : 100%;
+//     transition: $transitionall;
+//     display   : flex;
+//     color     : $primary-color;
+//     cursor    : pointer;
+
+//     @media (min-width: 992px) {
+//         padding: 1.8rem 1.8rem;
+//     }
+
+//     &:hover,
+//     &:focus,
+//     &:visited {
+//         box-shadow: $box-shadow;
+//         transition: $transitionall;
+//     }
+
+//     &--border {
+//         border       : 1px solid $border-clr8c;
+//         color        : $primary-color;
+//         border-radius: $border-radius2;
+//         display      : block;
+
+//         @media (max-width: 767px) {
+//             margin-bottom: 1.5rem;
+//         }
+
+//         &:hover,
+//         &:focus,
+//         &:visited {
+//             color: $primary-color;
+//         }
+//     }
+// }
+
+// // Service provider
+// .tata-card-secondary {
+//     background: #eaf3ff;
+// }
+
+// .explore-design-new-home {
+//     background: #ffa100 !important;
+//     color     : white;
+
+//     .tata-linkcircle {
+//         background: transparent !important;
+//         border    : 1px solid #ffffff;
+//     }
+// }
+
+// .cardimg {
+//     height: 100%;
+
+//     .tata-card-secondary__body {
+//         display        : flex;
+//         flex-direction : column;
+//         align-items    : flex-start;
+//         justify-content: center;
+//         padding        : 1.5rem 1.5rem;
+
+//         @media (min-width: 768px) {
+//             padding: 1rem 2.8rem;
+//             width  : 50%;
+//         }
+
+//         @media (min-width: 992px) {
+//             padding: 1rem 1.8rem;
+//         }
+//     }
+// }
+
+// .cardtext {
+//     margin-bottom      : 1.2rem;
+//     padding            : 1.5rem 1.5rem !important;
+//     background         : url("../../assets/img/home/service-provider/waves-pattern.svg") #eaf3ff no-repeat;
+//     background-size    : contain;
+//     background-position: 120% 100%;
+//     display            : flex;
+//     align-items        : center;
+
+//     @media (min-width: 768px) {
+//         margin-bottom: 1.6rem;
+//         padding      : 2rem 2.5rem !important;
+//         height       : 134px;
+//         max-height   : 100%;
+//     }
+
+//     .tata-card-secondary__body {
+//         width   : 100%;
+//         position: relative;
+//     }
+
+//     &:last-child {
+//         margin-bottom: 0;
+//     }
+// }
+
+// // tsa-panel-header
+
+// .tsa-panel-header {
+//     color         : $primary-color;
+//     font-family   : $fnt-barlow;
+//     font-weight   : $fnt-medium;
+//     font-style    : normal;
+//     letter-spacing: 0.2px;
+//     font-size     : 16px;
+//     line-height   : 24px;
+//     border        : none;
+
+//     .ant-collapse-header {
+//         width       : 100%;
+//         padding-left: 16px !important;
+//     }
+
+//     .anticon {
+//         position: absolute !important;
+//         right   : 0 !important;
+//         left    : 80% !important;
+//     }
+
+//     .ant-collapse-header[aria-expanded="false"] {
+
+//         .anticon {
+//             transform: rotateZ(-90deg);
+//         }
+//     }
+
+//     .ant-collapse-header[aria-expanded="true"] {
+
+//         .anticon {
+//             transform: rotateZ(0deg);
+//         }
+//     }
+// }
+
+.tabs {
+    &__content {
+        // height: 62px;
+        @media (min-width: 768px) {
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+        ul {
+            width: 80%;
+            @media (min-width: 992px) {
+                width: 30%;
+            }
+            li {
+                a {
+                    text-decoration: none !important;
+                    color: #a4a4a4 !important;
+                    font-weight: 500;
+                    &.active {
+                        color: #2d3577 !important;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        .card {
+            border: none !important;
+            height: 35rem;
+        }
+    }
+}
+.card {
+    @media (max-width: 425px) {
+        border-radius: 0 !important;
+    }
+    .category-btn {
+        left: 0.5rem;
+        @media (min-width: 768px) {
+            left: 1.5rem;
+        }
+    }
+    .card-body {
+        span {
+            @media (max-width: 768px) {
+                font-size: 14px !important;
+                line-height: 32px !important;
+            }
+            @media (max-width: 425px) {
+                font-weight: 500 !important;
+            }
+        }
+        .card-text {
+            font-size: 20px !important;
+            line-height: 24px !important;
+            @media (min-width: 992px) {
+                font-size: 24px !important;
+                line-height: 32px !important;
+            }
+        }
+        // p{
+        //     @media (max-width : 767px){
+        //         font-size: 17px !important;
+        //         line-height: 24px !important;
+        //     }
+        // }
+        .title{
+            color: #2d3577 !important;
+            display: -webkit-box !important;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+        }
+        .content {
+            display: none;
+            @media (min-width: 768px) {
+                display: -webkit-box !important;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+.cardsImg{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}

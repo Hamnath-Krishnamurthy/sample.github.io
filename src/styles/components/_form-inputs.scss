@@ -1,0 +1,197 @@
+// .tsa-form {
+//     label {
+//         font-size     : 14px;
+//         line-height   : 24px;
+//         letter-spacing: 0.29px;
+//         color         : $primary-color;
+//         font-weight   : $fnt-reg;
+//     }
+// }
+
+// .tsa-quantity-label {
+//     text-align: left;
+
+//     @media (min-width:768px) {
+//         display        : flex;
+//         justify-content: space-between;
+//         align-items    : center;
+//     }
+
+//     .tsa-custom-in-de-input {
+//         border-radius  : 2px;
+//         border         : 1px solid rgba(0, 0, 0, 0.22);
+//         display        : flex;
+//         position       : relative;
+//         align-items    : center;
+//         justify-content: space-evenly;
+//         width          : 100%;
+//         padding        : 12px 0;
+//         max-width      : 165px;
+
+//         .ant-input-number-handler-wrap {
+//             opacity: 1 !important;
+//         }
+
+//         .ant-input-number-input-wrap,
+//         .ant-input-number-handler-wrap {
+//             width: 50%;
+//         }
+
+//         .ant-input-number-handler-up {
+//             position: absolute;
+//             right   : 0 !important;
+//             width   : 40% !important;
+//             height  : 100% !important;
+//         }
+
+//         .ant-input-number-handler-down {
+//             position: absolute;
+//             left    : 0 !important;
+//             width   : 40% !important;
+//             height  : 100% !important;
+//         }
+
+//         .ant-input-number-handler-up:hover,
+//         .ant-input-number-handler-down:hover,
+//         .ant-input-number-handler-down,
+//         .ant-input-number-handler-up {
+//             display: flex;
+//             height : 100%;
+//         }
+
+//         .ant-input-number-handler-wrap,
+//         .ant-input-number-handler-down,
+//         .ant-input-number-handler-up {
+//             border: none !important;
+//         }
+
+//         .ant-input-number-handler-up-inner,
+//         .ant-input-number-handler-down-inner {
+
+//             svg {
+//                 display: none;
+//             }
+//         }
+
+//         .ant-input-number-handler-up-inner {
+//             top       : 0%;
+//             margin-top: 0;
+//             text-align: center;
+//         }
+//     }
+
+//     .ant-input-number-lg input {
+//         height     : auto;
+//         z-index    : 9;
+//         position   : relative;
+//         text-align : center;
+//         color      : $deep-blue;
+//         font-family: $fnt-montesrt;
+//         font-weight: $fnt-medium;
+//         font-size  : 16px;
+//     }
+
+//     .ant-input-number-handler-wrap {
+//         left  : 0;
+//         right : 0;
+//         top   : 0;
+//         bottom: 0;
+
+//         height: 100% !important;
+//         width : 100% !important;
+
+//         .ant-input-number-handler span {
+//             display: none !important;
+//             height : 100% !important;
+//         }
+
+//         span {
+//             position: relative;
+//             height  : 100% !important;
+
+//             &:after {
+//                 content   : "";
+//                 text-align: center;
+//                 bottom    : 0;
+//                 width     : 100%;
+//                 height    : 100%;
+//                 z-index   : 2;
+//                 position  : absolute;
+//             }
+//         }
+
+//         span:first-child:after {
+//             background   : url('../../assets/plus.svg') no-repeat center;
+//             // left      : 20%;
+//         }
+
+//         span:last-child:after {
+//             background   : url('../../assets/mins.svg') no-repeat center;
+//             // right     : 20%;
+//         }
+//     }
+
+//     .ant-input-number-focused,
+//     .ant-input-number-focused div span {
+//         box-shadow: none !important;
+//         background: transparent !important;
+//     }
+
+// }
+
+// .ant-form-item-label {
+//     color        : $text-color-black8;
+//     font-family  : $fnt-montesrt;
+//     font-size    : 12px;
+//     font-weight  : $fnt-semibold;
+//     line-height  : 22px;
+//     padding-right: 24px;
+// }
+
+// // Custom Increm and Decre Input Value
+
+.form-control,
+.form-select {
+    border: 0.564885px solid rgba(0, 0, 0, 0.5) !important;
+    border-radius: 9.03817px !important;
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.form-check-input {
+    border-radius: 1.12977px !important;
+    &:checked {
+        background-color: rgba(45, 53, 119, 1) !important ;
+        border-color: rgba(45, 53, 119, 1) !important;
+    }
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.form-control-search {
+    background: #ffffff !important;
+   width: 82% !important;
+    border-radius: 0 7px 7px 0 !important;
+    border: none !important;
+    height: 56px !important;
+    @media (min-width: 768px) {
+        height: 69px !important;
+    }
+}
+
+.input-group-text{
+    background: #ffffff !important;
+    border-radius: 7px 0 0 7px !important;
+    margin: auto;
+    border: none !important;
+    height: 70px !important;
+    font-size: 16px;
+    line-height: 21.17px;
+    font-weight: 400 !important;
+    @media (min-width: 768px) {
+        height: 56px !important;
+        font-weight: 500 !important;
+    }
+}

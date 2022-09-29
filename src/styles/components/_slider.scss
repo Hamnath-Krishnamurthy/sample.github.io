@@ -1,0 +1,111 @@
+// Slider arrows
+
+.tata-arrow-wrapper {
+    @media(min-width:768px) {
+        margin-top: 1.5rem;
+    }
+}
+
+.tata-slider-controls,
+.tata-explore-slider-controls,
+.tata-arrow-wrapper {
+    @media(max-width: 650px) {
+        display: none !important;
+    }
+}
+
+.tata-arrow-circle {
+    height       : 38px;
+    width        : 38px;
+    border-radius: 50%;
+    @extend .flex-center;
+    cursor             : pointer;
+    background         : transparent;
+    border             : 2px solid $white;
+    transition-duration: 1000ms;
+
+    @media(min-width:768px) {
+        height: 48px;
+        width : 48px;
+    }
+
+    &:first-child {
+        margin-right: 1.2rem;
+    }
+
+    &.swiper-button-disabled {
+        opacity            : .3;
+        cursor             : default;
+        transition-duration: 1000ms;
+    }
+
+    &--pri {
+        border: 2px solid $primary-color;
+    }
+
+    box-shadow: none !important;
+    outline   : none !important;
+
+    &:focus {
+        box-shadow: none !important;
+        outline   : none !important;
+    }
+}
+
+// Slider info
+
+.tata-sliderleft-push .swiper-wrapper {
+    @media (max-width: 991px) {
+        padding-left: 15px;
+    }
+
+    @media (min-width: 992px) {
+        position: relative;
+        left    : calc(50% - 482px);
+    }
+
+    @media (min-width: 1200px) {
+        left: calc(50% - 580px);
+
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .tata-sliderleft-push._lessthan3 {
+        .tata-product-card__img {
+            height: 278px;
+        }
+    }
+}
+
+.tata-sliderleft-push {
+    &._lessthan3 {
+        display        : flex;
+        flex-direction : row;
+        justify-content: flex-start;
+        flex-wrap      : wrap;
+
+        .product-offer-cards-less {
+            padding-bottom: 1.5rem;
+
+            @media (min-width: 1024px) {
+                padding-right: 1rem;
+            }
+
+            @media (min-width: 1366px) {
+                padding-right: 1.5rem;
+            }
+        }
+    }
+}
+
+.find-last-card .product-offer-cards-less:last-child {
+    padding-right: 0;
+}
+
+// .find-last-card {
+//     flex-wrap  : nowrap !important;
+//     overflow   : auto !important;
+//     white-space: nowrap !important;
+// }
